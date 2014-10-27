@@ -1,0 +1,24 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Mission 1\geiser1.cs">
+    <Files>
+      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
+      <File FileName="Assets\Terrains + toolkit\TerrainToolkit\TerrainToolkit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\veel gebruikte scripts\Follow2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\fallingRocks.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\rockDestroy.cs" Line="8" Column="3" />
+      <File FileName="Assets\Scripts\Mission 1\falling.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\collisionRock1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Terrains + toolkit\TerrainToolkit\Editor\TerrainToolkitEditor.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\menu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\destroyStof.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\collisionRock2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\geiser1.cs" Line="18" Column="16" />
+      <File FileName="Assets\Scripts\Mission 1\destroyGeiser.cs" Line="8" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
