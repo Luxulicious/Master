@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{FF51F5D8-4B5E-352C-51FE-37C179568F81}</ProjectGuid>
+	<ProjectGuid>{0B8AA304-0536-DA1B-D6C7-E0F29AC5B292}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -54,7 +54,7 @@
      <None Include="Assets\All imports\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Terrains + toolkit\TerrainToolkit\Read me.txt" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/florian/testing-git/EOTRPV2.1 Team Totaal/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/florian/Desktop/Project gd 2014/Master/mainproject/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{E0B1F6BE-113F-6BE0-3931-D5EAEFD504C4}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{0525F93C-250C-6057-2C37-3D9D3B1D75A3}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

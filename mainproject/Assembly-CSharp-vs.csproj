@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E0B1F6BE-113F-6BE0-3931-D5EAEFD504C4}</ProjectGuid>
+	<ProjectGuid>{0525F93C-250C-6057-2C37-3D9D3B1D75A3}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,6 +50,7 @@
      <Compile Include="Assets\All imports\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <Compile Include="Assets\All imports\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
      <Compile Include="Assets\Scripts\Menu\menu.cs" />
+     <Compile Include="Assets\Scripts\Mission 1\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Mission 1\collisionRock1.cs" />
      <Compile Include="Assets\Scripts\Mission 1\collisionRock2.cs" />
      <Compile Include="Assets\Scripts\Mission 1\destroyGeiser.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\Scripts\Mission 1\falling.cs" />
      <Compile Include="Assets\Scripts\Mission 1\fallingRocks.cs" />
      <Compile Include="Assets\Scripts\Mission 1\geiser1.cs" />
+     <Compile Include="Assets\Scripts\Mission 1\movingComet.cs" />
      <Compile Include="Assets\Scripts\Mission 1\rockDestroy.cs" />
      <Compile Include="Assets\Scripts\overige\GUITest.cs" />
      <Compile Include="Assets\Scripts\veel gebruikte scripts\Follow.cs" />

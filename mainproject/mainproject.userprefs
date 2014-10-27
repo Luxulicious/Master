@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js">
+    <Files>
+      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\movingComet.cs" Line="14" Column="31" />
+      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\fallingRocks.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\collisionRock1.cs" Line="21" Column="3" />
+      <File FileName="Assets\Scripts\Mission 1\CameraShake.cs" Line="45" Column="25" />
+      <File FileName="Assets\Scripts\veel gebruikte scripts\Switch.cs" Line="58" Column="76" />
+      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" Line="91" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
