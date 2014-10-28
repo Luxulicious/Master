@@ -52,7 +52,7 @@ public class Follow : MonoBehaviour {
                 Quaternion.LookRotation (target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 						myTransform.position += new Vector3 (0, 0, 0);
 				} else if ((target.position.x - myTransform.position.x > 6) || (target.position.z - myTransform.position.z > 6) || (target.position.x - myTransform.position.x < -6) || (target.position.z - myTransform.position.z < -6)) {
-			myTransform.position = (target.position - respawnPos );		
+						myTransform.position = (target.position - respawnPos );		
 
 					/*myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
 					Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);

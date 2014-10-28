@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\veel gebruikte scripts\Switch.cs">
     <Files>
       <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Mission 1\movingComet.cs" Line="12" Column="82" />
@@ -8,7 +8,7 @@
       <File FileName="Assets\Scripts\Mission 1\fallingRocks.cs" Line="34" Column="54" />
       <File FileName="Assets\Scripts\Mission 1\collisionRock1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Mission 1\CameraShake.cs" Line="8" Column="40" />
-      <File FileName="Assets\Scripts\veel gebruikte scripts\Switch.cs" Line="19" Column="70" />
+      <File FileName="Assets\Scripts\veel gebruikte scripts\Switch.cs" Line="11" Column="21" />
       <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\veel gebruikte scripts\Follow.cs" Line="54" Column="11" />
       <File FileName="Assets\Scripts\veel gebruikte scripts\Follow2.cs" Line="47" Column="430" />
