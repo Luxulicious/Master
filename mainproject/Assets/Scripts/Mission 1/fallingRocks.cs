@@ -23,7 +23,7 @@ public class fallingRocks : MonoBehaviour {
 		while (true) 
 		{
 			Instantiate (rock1, new Vector3(Random.Range (30, 460), 200,Random.Range (0, 460)), Quaternion.identity);
-			yield return new WaitForSeconds(Random.Range(1f, 3f));
+			yield return new WaitForSeconds(Random.Range(1f, 2f));
 		}
 	}
 	IEnumerator fallingRock2()
@@ -31,7 +31,7 @@ public class fallingRocks : MonoBehaviour {
 		while (true) 
 		{
 			Instantiate (rock2, new Vector3(Random.Range (30, 220), 200,Random.Range (0, 250)), Quaternion.identity);
-			yield return new WaitForSeconds(Random.Range(1f, 3f));
+			yield return new WaitForSeconds(Random.Range(1f, 2f));
 		}
 	}
 }

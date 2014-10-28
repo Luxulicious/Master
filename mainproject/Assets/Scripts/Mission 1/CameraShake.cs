@@ -5,7 +5,7 @@ public class CameraShake : MonoBehaviour
 {
 
 	public static bool Shaking = false;
-	public static bool cameraSwitch = false;
+	public static bool cameraSwitch = true;
 	// Transform of the camera to shake. Grabs the gameObject's transform
 	// if null.
 	public Transform camTransform;
@@ -42,8 +42,8 @@ public class CameraShake : MonoBehaviour
 						} else {
 								shake = 0f;
 								camTransform.localPosition = originalPos;
-				cameraSwitch = true;
-			}
+								cameraSwitch = true;
+						}
 				}
 		}
 }

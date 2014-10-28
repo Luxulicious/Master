@@ -1,15 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js">
     <Files>
       <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Mission 1\movingComet.cs" Line="14" Column="31" />
+      <File FileName="Assets\Scripts\Mission 1\movingComet.cs" Line="12" Column="82" />
       <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Mission 1\fallingRocks.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Mission 1\collisionRock1.cs" Line="21" Column="3" />
-      <File FileName="Assets\Scripts\Mission 1\CameraShake.cs" Line="45" Column="25" />
-      <File FileName="Assets\Scripts\veel gebruikte scripts\Switch.cs" Line="58" Column="76" />
-      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" Line="91" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\fallingRocks.cs" Line="34" Column="54" />
+      <File FileName="Assets\Scripts\Mission 1\collisionRock1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mission 1\CameraShake.cs" Line="8" Column="40" />
+      <File FileName="Assets\Scripts\veel gebruikte scripts\Switch.cs" Line="19" Column="70" />
+      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\veel gebruikte scripts\Follow.cs" Line="54" Column="11" />
+      <File FileName="Assets\Scripts\veel gebruikte scripts\Follow2.cs" Line="47" Column="430" />
+      <File FileName="Assets\Scripts\Mission 1\falling.cs" Line="1" Column="1" />
+      <File FileName="Assets\All imports\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

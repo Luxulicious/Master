@@ -7,6 +7,7 @@ public class Follow2 : MonoBehaviour
 
     public Transform Doel2;
     public float moveSpeed2 = 3;
+	public float runSpeed2 = 8;
     public float rotationSpeed2 = 5;
     public Transform myTransform2;
 
@@ -43,17 +44,22 @@ public class Follow2 : MonoBehaviour
 
 
 
-        if ((Doel2.position.x - myTransform2.position.x >= 3) || (Doel2.position.z - myTransform2.position.z >= 3) || (Doel2.position.x - myTransform2.position.x <= -3) || (Doel2.position.z - myTransform2.position.z <= -3))
+		if ((Doel2.position.x - myTransform2.position.x >= 4) && (Doel2.position.x - myTransform2.position.x <= 6) || (Doel2.position.z - myTransform2.position.z >= 4) && (Doel2.position.z - myTransform2.position.z <= 6) || (Doel2.position.x - myTransform2.position.x <= -4) && (Doel2.position.x - myTransform2.position.x >= -6) || (Doel2.position.z - myTransform2.position.z <= -4) && (Doel2.position.x - myTransform2.position.x >= -6))
         {
         myTransform2.rotation = Quaternion.Slerp(myTransform2.rotation,
             Quaternion.LookRotation(Doel2.position - myTransform2.position), rotationSpeed2 * Time.deltaTime);
         myTransform2.position += myTransform2.forward * moveSpeed2 * Time.deltaTime;
         }
-        else
+		else if ((Doel2.position.x - myTransform2.position.x < 4) || (Doel2.position.z - myTransform2.position.z < 4) || (Doel2.position.x - myTransform2.position.x > -4) || (Doel2.position.z - myTransform2.position.z > -4))
         {
             myTransform2.rotation = Quaternion.Slerp(myTransform2.rotation,
                 Quaternion.LookRotation(Doel2.position - myTransform2.position), rotationSpeed2 * Time.deltaTime);
             myTransform2.position += new Vector3(0, 0, 0);
-        }
+
+		}else if ((Doel2.position.x - myTransform2.position.x > 6) || (Doel2.position.z - myTransform2.position.z > 6) || (Doel2.position.x - myTransform2.position.x < -6) || (Doel2.position.z - myTransform2.position.z < -6)) {
+			myTransform2.rotation = Quaternion.Slerp(myTransform2.rotation,
+			Quaternion.LookRotation(Doel2.position - myTransform2.position), rotationSpeed2 * Time.deltaTime);
+			myTransform2.position += myTransform2.forward * runSpeed2 * Time.deltaTime;
+		}
     }
 }

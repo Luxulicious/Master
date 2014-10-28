@@ -7,6 +7,9 @@ public class Switch : MonoBehaviour {
     public Transform p2;
     public Transform p3;
 	public Transform startCamera;
+	public Transform p1Camera;
+	public Transform p2Camera;
+	public Transform p3Camera;
 
     public static bool p1check = true;
     public static bool p2check = false;
@@ -15,22 +18,21 @@ public class Switch : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		(p1.GetComponent("ThirdPersonCamera") as MonoBehaviour).enabled = false;
+		(p1.GetComponent("MouseLook") as MonoBehaviour).enabled = false;
         (p1.GetComponent("Follow") as MonoBehaviour).enabled = false;
         (p1.GetComponent("Follow2") as MonoBehaviour).enabled = false;
 
 
-        (p2.GetComponent("Animation") as Animation).Play("walk");
+       
         (p2.GetComponent("CharacterController") as CharacterController).enabled = false;
-        (p2.GetComponent("ThirdPersonCamera") as MonoBehaviour).enabled = false;
+		(p2.GetComponent("MouseLook") as MonoBehaviour).enabled = false;
         (p2.GetComponent("ThirdPersonController") as MonoBehaviour).enabled = false;
         (p2.GetComponent("Follow2") as MonoBehaviour).enabled = false;
 	
 
 
-        (p3.GetComponent("Animation") as Animation).Play("walk");
         (p3.GetComponent("CharacterController") as CharacterController).enabled = false;
-        (p3.GetComponent("ThirdPersonCamera") as MonoBehaviour).enabled = false;
+		(p3.GetComponent("MouseLook") as MonoBehaviour).enabled = false;
         (p3.GetComponent("ThirdPersonController") as MonoBehaviour).enabled = false;
         (p3.GetComponent("Follow") as MonoBehaviour).enabled = false;
 
@@ -55,34 +57,31 @@ public class Switch : MonoBehaviour {
 
 		if(CameraShake.cameraSwitch == true){
 			startCamera.camera.active = false;
-			(p1.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = true;
+			(p1.GetComponent ("MouseLook") as MonoBehaviour).enabled = true;
 			CameraShake.cameraSwitch = false;
 
 		}
 				if (Input.GetKey ("1")) {
 
 						(p1.GetComponent ("CharacterController") as CharacterController).enabled = true;
-						(p1.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = true;
-						(p1.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = true;
+						(p1.GetComponent ("MouseLook") as MonoBehaviour).enabled = true;
+						(p1.GetComponent ("FPSInputController") as MonoBehaviour).enabled = true;
 						(p1.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 						(p1.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 
 
 
-
-						(p2.GetComponent ("Animation") as Animation).Play ("walk");
 						(p2.GetComponent ("CharacterController") as CharacterController).enabled = false;
-						(p2.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = false;
-						(p2.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = false;
+						(p2.GetComponent ("MouseLook") as MonoBehaviour).enabled = false;
+						(p2.GetComponent ("FPSInputController") as MonoBehaviour).enabled = false;
 						(p2.GetComponent ("Follow2") as MonoBehaviour).enabled = true;
 						(p2.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 
 
 
-						(p3.GetComponent ("Animation") as Animation).Play ("walk");
 						(p3.GetComponent ("CharacterController") as CharacterController).enabled = false;
-						(p3.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = false;
-						(p3.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = false;
+						(p3.GetComponent ("MouseLook") as MonoBehaviour).enabled = false;
+						(p3.GetComponent ("FPSInputController") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow") as MonoBehaviour).enabled = true;
 
@@ -93,27 +92,25 @@ public class Switch : MonoBehaviour {
 						p3check = false;
 				}
 				if (Input.GetKey ("2")) {
-						(p1.GetComponent ("Animation") as Animation).Play ("walk");
 						(p1.GetComponent ("CharacterController") as CharacterController).enabled = false;
-						(p1.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = false;
-						(p1.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = false;
+						(p1.GetComponent ("MouseLook") as MonoBehaviour).enabled = false;
+						(p1.GetComponent ("FPSInputController") as MonoBehaviour).enabled = false;
 						(p1.GetComponent ("Follow") as MonoBehaviour).enabled = true;
 						(p1.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 
 
 
 						(p2.GetComponent ("CharacterController") as CharacterController).enabled = true;
-						(p2.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = true;
-						(p2.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = true;
+						(p2.GetComponent ("MouseLook") as MonoBehaviour).enabled = true;
+						(p2.GetComponent ("FPSInputController") as MonoBehaviour).enabled = true;
 						(p2.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 						(p2.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 
 
 
-						(p3.GetComponent ("Animation") as Animation).Play ("walk");
 						(p3.GetComponent ("CharacterController") as CharacterController).enabled = false;
-						(p3.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = false;
-						(p3.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = false;
+						(p3.GetComponent ("MouseLook") as MonoBehaviour).enabled = false;
+						(p3.GetComponent ("FPSInputController") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow2") as MonoBehaviour).enabled = true;
 
@@ -123,26 +120,24 @@ public class Switch : MonoBehaviour {
 						p3check = false;
 				}
 				if (Input.GetKey ("3")) {
-						(p1.GetComponent ("Animation") as Animation).Play ("walk");
 						(p1.GetComponent ("CharacterController") as CharacterController).enabled = false;
-						(p1.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = false;
-						(p1.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = false;
+						(p1.GetComponent ("MouseLook") as MonoBehaviour).enabled = false;
+						(p1.GetComponent ("FPSInputController") as MonoBehaviour).enabled = false;
 						(p1.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 						(p1.GetComponent ("Follow2") as MonoBehaviour).enabled = true;
 
 
-						(p2.GetComponent ("Animation") as Animation).Play ("walk");
 						(p2.GetComponent ("CharacterController") as CharacterController).enabled = false;
-						(p2.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = false;
-						(p2.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = false;
+						(p2.GetComponent ("MouseLook") as MonoBehaviour).enabled = false;
+						(p2.GetComponent ("FPSInputController") as MonoBehaviour).enabled = false;
 						(p2.GetComponent ("Follow") as MonoBehaviour).enabled = true;
 						(p2.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 
 
 
 						(p3.GetComponent ("CharacterController") as CharacterController).enabled = true;
-						(p3.GetComponent ("ThirdPersonCamera") as MonoBehaviour).enabled = true;
-						(p3.GetComponent ("ThirdPersonController") as MonoBehaviour).enabled = true;
+						(p3.GetComponent ("MouseLook") as MonoBehaviour).enabled = true;
+						(p3.GetComponent ("FPSInputController") as MonoBehaviour).enabled = true;
 						(p3.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 

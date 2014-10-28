@@ -6,8 +6,10 @@ public class Follow : MonoBehaviour {
 
     public Transform target;
     public float moveSpeed = 3;
+	public float runSpeed = 8;
     public float rotationSpeed = 5;
     public Transform myTransform;
+	Vector3 respawnPos = new Vector3 (3, 0, 3);
 
    
     void Awake()
@@ -41,17 +43,20 @@ public class Follow : MonoBehaviour {
         }
 
 
-        if ((target.position.x - myTransform.position.x >= 3) || (target.position.z - myTransform.position.z >= 3) || (target.position.x - myTransform.position.x <= -3) || (target.position.z - myTransform.position.z <= -3))
-        {
-            myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
-                Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
-            myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
-                Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
-            myTransform.position  += new Vector3(0, 0, 0);
-        }
+		if ((target.position.x - myTransform.position.x >= 4) && (target.position.x - myTransform.position.x <= 6) || (target.position.z - myTransform.position.z >= 4) && (target.position.z - myTransform.position.z <= 6) || (target.position.x - myTransform.position.x <= -4) && (target.position.x - myTransform.position.x >= -6) || (target.position.z - myTransform.position.z <= -4) && (target.position.x - myTransform.position.x >= -6)) {
+						myTransform.rotation = Quaternion.Slerp (myTransform.rotation,
+                Quaternion.LookRotation (target.position - myTransform.position), rotationSpeed * Time.deltaTime);
+						myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
+				} else if ((target.position.x - myTransform.position.x < 4) || (target.position.z - myTransform.position.z < 4) || (target.position.x - myTransform.position.x > -4) || (target.position.z - myTransform.position.z > -4)) {
+						myTransform.rotation = Quaternion.Slerp (myTransform.rotation,
+                Quaternion.LookRotation (target.position - myTransform.position), rotationSpeed * Time.deltaTime);
+						myTransform.position += new Vector3 (0, 0, 0);
+				} else if ((target.position.x - myTransform.position.x > 6) || (target.position.z - myTransform.position.z > 6) || (target.position.x - myTransform.position.x < -6) || (target.position.z - myTransform.position.z < -6)) {
+			myTransform.position = (target.position - respawnPos );		
+
+					/*myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
+					Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
+					myTransform.position += myTransform.forward * runSpeed * Time.deltaTime;*/
+				}
 	}
 }
