@@ -6,7 +6,7 @@ public class Follow2 : MonoBehaviour
 
 
     public Transform Doel2;
-    public float moveSpeed2 = 3;
+    public float moveSpeed2 = 6;
 	public float runSpeed2 = 8;
     public float rotationSpeed2 = 5;
     public Transform myTransform2;

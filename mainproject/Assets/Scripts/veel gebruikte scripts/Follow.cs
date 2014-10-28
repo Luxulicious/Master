@@ -5,7 +5,7 @@ public class Follow : MonoBehaviour {
 
 
     public Transform target;
-    public float moveSpeed = 3;
+    public float moveSpeed = 6;
 	public float runSpeed = 8;
     public float rotationSpeed = 5;
     public Transform myTransform;

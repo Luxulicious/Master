@@ -54,7 +54,7 @@
      <None Include="Assets\All imports\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Terrains + toolkit\TerrainToolkit\Read me.txt" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/florian/Desktop/Project gd 2014/Master/mainproject/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/florian/Desktop/projectgd/Master/mainproject/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>

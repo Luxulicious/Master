@@ -11,6 +11,7 @@ public class Switch : MonoBehaviour {
 	public Transform p2Camera;
 	public Transform p3Camera;
 
+
     public static bool p1check = true;
     public static bool p2check = false;
     public static bool p3check = false;
@@ -21,20 +22,27 @@ public class Switch : MonoBehaviour {
 		(p1.GetComponent("MouseLook") as MonoBehaviour).enabled = false;
         (p1.GetComponent("Follow") as MonoBehaviour).enabled = false;
         (p1.GetComponent("Follow2") as MonoBehaviour).enabled = false;
+		 p1.rigidbody.isKinematic = true;
 
 
        
         (p2.GetComponent("CharacterController") as CharacterController).enabled = false;
 		(p2.GetComponent("MouseLook") as MonoBehaviour).enabled = false;
-        (p2.GetComponent("ThirdPersonController") as MonoBehaviour).enabled = false;
+        (p2.GetComponent("FPSInputController") as MonoBehaviour).enabled = false;
         (p2.GetComponent("Follow2") as MonoBehaviour).enabled = false;
+		 p2.rigidbody.isKinematic = false;
 	
 
 
         (p3.GetComponent("CharacterController") as CharacterController).enabled = false;
 		(p3.GetComponent("MouseLook") as MonoBehaviour).enabled = false;
-        (p3.GetComponent("ThirdPersonController") as MonoBehaviour).enabled = false;
+        (p3.GetComponent("FPSInputController") as MonoBehaviour).enabled = false;
         (p3.GetComponent("Follow") as MonoBehaviour).enabled = false;
+		 p3.rigidbody.isKinematic = false;
+
+		p1Camera.camera.active = false;
+		p2Camera.camera.active = false;
+		p3Camera.camera.active = false;
 
 	}
 
@@ -57,6 +65,9 @@ public class Switch : MonoBehaviour {
 
 		if(CameraShake.cameraSwitch == true){
 			startCamera.camera.active = false;
+			p1Camera.camera.active = true;
+			p2Camera.camera.active = false;
+			p3Camera.camera.active = false;
 			(p1.GetComponent ("MouseLook") as MonoBehaviour).enabled = true;
 			CameraShake.cameraSwitch = false;
 
@@ -85,7 +96,13 @@ public class Switch : MonoBehaviour {
 						(p3.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow") as MonoBehaviour).enabled = true;
 
+						p1.rigidbody.isKinematic = true;
+						p2.rigidbody.isKinematic = false;
+						p3.rigidbody.isKinematic = false;
 
+						p1Camera.camera.active = true;
+						p2Camera.camera.active = false;
+						p3Camera.camera.active = false;
 
 						p1check = true;
 						p2check = false;
@@ -115,6 +132,14 @@ public class Switch : MonoBehaviour {
 						(p3.GetComponent ("Follow2") as MonoBehaviour).enabled = true;
 
 
+						p1.rigidbody.isKinematic = false;
+						p2.rigidbody.isKinematic = true;
+						p3.rigidbody.isKinematic = false;
+
+						p1Camera.camera.active = false;
+						p2Camera.camera.active = true;
+						p3Camera.camera.active = false;
+
 						p1check = false;
 						p2check = true;
 						p3check = false;
@@ -141,7 +166,13 @@ public class Switch : MonoBehaviour {
 						(p3.GetComponent ("Follow") as MonoBehaviour).enabled = false;
 						(p3.GetComponent ("Follow2") as MonoBehaviour).enabled = false;
 
+						p1.rigidbody.isKinematic = false;
+						p2.rigidbody.isKinematic = false;
+						p3.rigidbody.isKinematic = true;
 
+						p1Camera.camera.active = false;
+						p2Camera.camera.active = false;
+						p3Camera.camera.active = true;
 
 						p1check = false;
 						p2check = false;
